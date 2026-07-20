@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Application as soon as it is started.
+         Transparent system bars for Android 15+ edge-to-edge rendering. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Transparent: Flutter Container fills this area with teal on Android 15+ -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Transparent navigation bar for modern edge-to-edge -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- false = white/light icons (correct for teal background) -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    
+    <!-- Theme applied to the Android Application after the splash screen. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Transparent: Flutter Container fills this area with teal on Android 15+ -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Transparent navigation bar for modern edge-to-edge -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- false = white/light icons (correct for teal background) -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme applied to the Android Application as soon as it is started.
+         Transparent status bar so Flutter's teal Container shows through. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Teal native status bar for Android 10-14 to bypass OEM black bar bugs -->
+        <item name="android:statusBarColor">#087B84</item>
+        <!-- White navigation bar to seamlessly blend with the app's bottom tab bar -->
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <!-- false = white/light icons (correct for teal background) -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <!-- Theme applied to the Android Application after the splash screen. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Teal native status bar for Android 10-14 to bypass OEM black bar bugs -->
+        <item name="android:statusBarColor">#087B84</item>
+        <!-- White navigation bar to seamlessly blend with the app's bottom tab bar -->
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <!-- false = white/light icons (correct for teal background) -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+</resources>
