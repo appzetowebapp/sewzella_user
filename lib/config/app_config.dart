@@ -90,9 +90,9 @@ class AppConfig {
 
   // Native Android version cached at startup
   static int androidSdkInt = 35; // Default to edge-to-edge (Android 15+)
-  static const String apiBaseUrl = 'https://api.sewzella.com/api/v1';
+  static const String apiBaseUrl = 'https://sewzella.com/api';
   static const String fcmTokenUrl =
-      'https://api.sewzella.com/api/v1/notifications/fcm-token';
+      'https://sewzella.com/api/v1/user/fcm-token';
   //https://api.Mobasket.com/api/notification/user/token
   // ==================== SPLASH SCREEN ====================
   static const int splashDurationSeconds = 2;

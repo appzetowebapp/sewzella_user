@@ -44,7 +44,7 @@ class ApiService {
       final url = AppConfig.fcmTokenUrl;
       
       final requestBody = {
-        'token': token,
+        'fcmToken': token,
         'platform': 'mobile',
       };
 
