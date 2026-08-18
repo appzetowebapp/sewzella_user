@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                   child: Container(
                     width: 480,  
                     height: 480, 
-                    color: const Color(0xFF8E4692),
+                    color: Colors.white
                   ),
                 ),
               );
